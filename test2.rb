@@ -1,1 +1,1 @@
-puts "haginoippei"
+puts "萩野一平"
