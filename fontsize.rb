@@ -1,7 +1,7 @@
 print "<html><title>font size list</title>"
-print "<body>\n<p>\n"
+puts "<body>\n<p>"
 font_table = {normal: "+0", small: "-1", big: "+1"}
 font_table.each do |key, value|
- print '<font size ="', value, '">', key, '</font><br>', "\n"
+ puts ("<font size =#{value}>#{key}</font><br>")
 end
-print "</p></body></html>" 
+puts "</p></body></html>" 
