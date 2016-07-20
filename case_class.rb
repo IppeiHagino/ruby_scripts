@@ -1,8 +1,8 @@
-array = ["萩野", 1, nil ]
+array = ["萩野", 1, nil]
 array.each do |item|
  case item
  when String
-  puts"item is String"
+  puts "item is String"
  when Numeric
   puts "item is a Numeric"
  else

@@ -4,9 +4,7 @@ max_matches = 10
 matches = 0
 file = open(filename)
 while text = file.gets
- if matches >= max_matches
-  break
- end
+ break if matches >= max_matches
  if pattern =~ text
   matches += 1
   print text
