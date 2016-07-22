@@ -1,10 +1,6 @@
 pattern = Regexp.new(ARGV[0])
-filename = ARGV[1]
-
-file = open(filename)
+file = open(ARGV[1])
 while text = file.gets
-  if pattern =~ text
-    print text
-  end
+ print text  if pattern =~ text
 end
 file.close

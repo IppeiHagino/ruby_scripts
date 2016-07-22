@@ -1,8 +1,7 @@
 pattern = Regexp.new(ARGV[0])
-filename = ARGV[1]
 max_matches = 10
 matches = 0
-file = open(filename)
+file = open(ARGV[1])
 while text = file.gets
  break if matches >= max_matches
  if pattern =~ text

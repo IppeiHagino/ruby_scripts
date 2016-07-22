@@ -1,6 +1,7 @@
+#応用問題 breakのみ
 puts "breakの例 :"
 array = %w(Perl Pyton Ruby Scheme)
-array.each.with_index(1){|lang, i|
-break if i == 3
-puts(i, lang)
+array.each_with_index{|lang, i|
+break if i == 2
+puts(i+1, lang)
 }

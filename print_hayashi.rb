@@ -1,6 +1,4 @@
-names =["小林","林","高野","盛岡"]
+names = %w(小林 林 高野 盛岡)
 names.each do |name|
- if /林/ =~ name
-  puts name
- end
+ puts name if /林/ =~ name
 end

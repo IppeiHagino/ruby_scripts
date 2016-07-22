@@ -1,2 +1,2 @@
 require_relative  "hello"
-hello()
+hello
