@@ -1,32 +1,25 @@
-
-Array = %w(Perl Pyton Ruby Scheme)
+lang_array = %w(Perl Pyton Ruby Scheme)
 
 puts "breakの例 :"
 i = 0
-Array.each do |lang|
- i +=1
- if i == 3
-  break
- end
- p [ i, lang ]
+lang_array.each do |lang|
+  i +=1
+  break if i == 3
+  p [ i, lang ]
 end
 
-puts  "nextの例 :"
+puts "nextの例 :"
 i = 0
-Array.each do |lang| 
-i +=1
- if i == 3
-  next
- end
- p [ i, lang ]
+lang_array.each do |lang| 
+  i +=1
+  next if i == 3
+  p [ i, lang ]
 end
 
 puts "redoの例 :"
 i = 0
-Array.each do |lang| 
-i +=1
- if i == 3
-  redo
- end
- p [ i, lang ]
+lang_array.each do |lang| 
+  i +=1
+  redo if i == 3
+  p [ i, lang ]
 end
